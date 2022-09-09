@@ -30,4 +30,4 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
       - name: build and verify with maven 
-        run: pwd
+        run: mvn --batch-mode --update-snapshots verify;
