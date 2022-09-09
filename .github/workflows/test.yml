@@ -32,13 +32,14 @@ jobs:
       - name: build and verify with maven 
         run: |
           cd demo
-          mvn --batch-mode --update-snapshots verify;
+          mvn --batch-mode --update-snapshots verify
   codemetrics:
      runs-on: ubuntu-latest
      steps: 
-       - name: SonarCub scan
+       - name: Quality scan
          uses: codacy/codacy-analysis-cli-action@master
          with:
+          project-tocken: '4a47d6066c6a48719ca07a913715b562'
           output: results.sarif
           format: sarif
           # Adjust severity of non-security issues
