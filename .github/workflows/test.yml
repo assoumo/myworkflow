@@ -41,7 +41,6 @@ jobs:
          with:
           output: results.sarif
           format: sarif
-          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           # Adjust severity of non-security issues
           gh-code-scanning-compat: true
           # Force 0 exit code to allow SARIF file generation
@@ -53,4 +52,3 @@ jobs:
          uses: github/codeql-action/upload-sarif@main
          with:
           sarif_file: results.sarif
-          
