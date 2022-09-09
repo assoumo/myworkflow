@@ -31,5 +31,5 @@ jobs:
           distribution: 'adopt'
       - name: build and verify with maven 
         run: |
-          cd ../demo;
+          cd ../../demo;
           mvn --batch-mode --update-snapshots verify;
