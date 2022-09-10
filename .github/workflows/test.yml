@@ -40,6 +40,7 @@ jobs:
          uses: codacy/codacy-analysis-cli-action@master
          with:
           project-token: '4a47d6066c6a48719ca07a913715b562'
+          
           output-file: results.sarif
           format: sarif
           # Adjust severity of non-security issues
@@ -50,6 +51,6 @@ jobs:
       
       # Upload the SARIF file generated in the previous step
        - name: Upload SARIF results file
-         uses: github/codeql-action/upload-sarif@main
+         uses: github/codeql-action/upload-sarif@v2
          with:
           sarif_file: results.sarif
