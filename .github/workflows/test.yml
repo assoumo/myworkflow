@@ -41,7 +41,7 @@ jobs:
          with:
           project-token: '4a47d6066c6a48719ca07a913715b562'
           
-          output-file: results.sarif
+          output: results.sarif
           format: sarif
           # Adjust severity of non-security issues
           gh-code-scanning-compat: true
