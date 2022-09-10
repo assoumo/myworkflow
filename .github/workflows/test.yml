@@ -37,7 +37,7 @@ jobs:
      runs-on: ubuntu-latest
      steps: 
        - name: Quality scan
-         uses: codacy/codacy-analysis-cli-action@master
+         uses: codacy/codacy-coverage-reporter-action@v1
          with:
           project-token: '4a47d6066c6a48719ca07a913715b562'
           
